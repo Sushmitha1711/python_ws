@@ -5,6 +5,7 @@ class car:
         self.regno=regno
         self.no_gears=no_gears
         self.is_started=False
+        self.c_gear=0
 
     
     def start(self):
@@ -28,7 +29,6 @@ class car:
                 self.c_gear+=1
                 print(f"car with regno {self.regno} changed gear...{self.c_gear}")
             else:
-                print(f"car with regno : {self.regno} already ")
-            self.is_started=False
+                print(f"car with regno : {self.regno} already in top gear ")
         else:
             print("you cant change the gear")
